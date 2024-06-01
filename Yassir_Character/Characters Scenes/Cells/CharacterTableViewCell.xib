@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="CharacterTableViewCell" customModule="Yassir_Character" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTg-NM-A9h" customClass="CardView" customModule="Yassir_Character" customModuleProvider="target">
+                        <rect key="frame" x="18" y="12" width="284" height="93"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g7V-m2-RhW">
+                                <rect key="frame" x="8" y="16.666666666666671" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="DbK-EJ-eW7"/>
+                                    <constraint firstAttribute="width" secondItem="g7V-m2-RhW" secondAttribute="height" multiplier="1:1" id="Z0Q-bW-H0d"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1f-mj-28H">
+                                <rect key="frame" x="76" y="45.666666666666664" width="41" height="20.999999999999993"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8r-17-eOA">
+                                <rect key="frame" x="76" y="16.666666666666668" width="200" height="21.000000000000004"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g7V-m2-RhW" firstAttribute="centerY" secondItem="MTg-NM-A9h" secondAttribute="centerY" id="5ym-9o-be3"/>
+                            <constraint firstItem="a8r-17-eOA" firstAttribute="leading" secondItem="g7V-m2-RhW" secondAttribute="trailing" constant="8" id="GjM-W7-QOq"/>
+                            <constraint firstItem="a8r-17-eOA" firstAttribute="top" secondItem="g7V-m2-RhW" secondAttribute="top" id="Jko-UN-suM"/>
+                            <constraint firstItem="w1f-mj-28H" firstAttribute="leading" secondItem="a8r-17-eOA" secondAttribute="leading" id="JzB-gZ-Uqs"/>
+                            <constraint firstItem="w1f-mj-28H" firstAttribute="top" secondItem="a8r-17-eOA" secondAttribute="bottom" constant="8" id="YyZ-hv-Hvu"/>
+                            <constraint firstItem="g7V-m2-RhW" firstAttribute="leading" secondItem="MTg-NM-A9h" secondAttribute="leading" constant="8" id="oJL-Th-TIk"/>
+                            <constraint firstAttribute="trailing" secondItem="a8r-17-eOA" secondAttribute="trailing" constant="8" id="y1j-t4-6gF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="MTg-NM-A9h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="68l-ZZ-ZKG"/>
+                    <constraint firstAttribute="bottom" secondItem="MTg-NM-A9h" secondAttribute="bottom" constant="12" id="T3K-Dm-b9M"/>
+                    <constraint firstAttribute="trailing" secondItem="MTg-NM-A9h" secondAttribute="trailing" constant="18" id="cNK-QF-IzA"/>
+                    <constraint firstItem="MTg-NM-A9h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="dEh-4O-Wvs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="characterImageView" destination="g7V-m2-RhW" id="RtH-HE-ud5"/>
+                <outlet property="characterName" destination="a8r-17-eOA" id="8Lk-P9-zyy"/>
+                <outlet property="characterType" destination="w1f-mj-28H" id="4JA-ne-zJn"/>
+            </connections>
+            <point key="canvasLocation" x="-64.122137404580144" y="18.661971830985916"/>
+        </tableViewCell>
+    </objects>
+</document>
